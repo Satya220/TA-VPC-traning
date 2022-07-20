@@ -10,7 +10,7 @@ jobs:
       packages: write
       contents: read
       id-token: write
-    steps:
+steps:
       - name: Clone our repository
         uses: actions/checkout@v3
 
