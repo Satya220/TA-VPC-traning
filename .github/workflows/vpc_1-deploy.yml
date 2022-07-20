@@ -18,7 +18,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with: 
           role_to_assume: arn:aws:iam::718690716120:role/github-actions-oidc
-          aws-reigon: eu-west-1
+          aws-region: eu-west-1
           role-session-name: GithubVPCDeploy
 
       - name: Terraform sSet up
