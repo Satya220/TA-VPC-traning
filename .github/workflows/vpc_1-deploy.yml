@@ -9,7 +9,7 @@ jobs:
     permissions:
       packages: write
       contents: read
-      id-token:write
+      id-token: write
     steps:
       - name: Clone our repository
         uses: actions/checkout@v3
