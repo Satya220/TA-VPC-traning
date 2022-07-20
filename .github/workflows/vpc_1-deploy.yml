@@ -14,21 +14,21 @@ jobs:
     - name: Clone our repository
       uses: actions/checkout@v3
 
-    - name: AWS Authentication
-      uses: aws-actions/configure-aws-credentials@v1
-      with: 
-        role_to_assume: arn:aws:iam::718690716120:role/github-actions-oidc
-        aws-reigon: eu-west-1
-        role-session-name: GithubVPCDeploy
+# - name: AWS Authentication
+# uses: aws-actions/configure-aws-credentials@v1
+# with: 
+# role_to_assume: arn:aws:iam::718690716120:role/github-actions-oidc
+# aws-reigon: eu-west-1
+# role-session-name: GithubVPCDeploy
 
-    - name: Terraform sSet up
-      uses: hashicorp/setup-terraform@v1
+# - name: Terraform sSet up
+# uses: hashicorp/setup-terraform@v1
 
-    - name: Terraform initialization
-      run: Terraform init
+# - name: Terraform initialization
+# run: Terraform init
 
-    - name: Terraform planning
-      run: terraform plan
+# - name: Terraform planning
+# run: terraform plan
 
-    - name: Terraform apply
-      run: terraform apply -auto-approve
+# - name: Terraform apply
+# run: terraform apply -auto-approve
