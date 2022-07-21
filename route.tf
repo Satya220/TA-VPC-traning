@@ -20,7 +20,7 @@ resource "aws_route_table" "nat_route_tbl" {
   }
 
   tags = {
-    Name = "internet-route-table"
+    Name = "nat-route-table"
   }
 }
 
